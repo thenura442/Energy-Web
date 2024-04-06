@@ -1,0 +1,122 @@
+<html>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Donation</title>
+        <link rel="stylesheet" href="donatesheet.css">
+
+        <style>
+           
+        </style>
+        <script>
+  			function validateForm() {
+  			let x = document.forms["Donate"]["fname"].value;
+  				if (x == "") {
+    		alert("*Please enter your First-Name");
+    		return false;
+			}
+    		else{
+    		let x = document.forms["Donate"]["lname"].value;
+  				if (x == "") {
+   			alert("*Please enter your Last-Name");
+   			return false;
+  			}
+ 			else {
+  			let x = document.forms["Donate"]["email"].value;
+  				if (x == "")  {
+   			alert("*Please enter your Email-Address");
+    		return false;
+  			}
+  			else{
+  	 		let x = document.forms["Donate"]["amount"].value;
+  			if (x == "") {
+    		alert("*Please enter the amount that you would like to Donate Us. Thank you!");
+    		return false;
+  				}
+			}
+		}
+	}
+}
+
+</script>
+
+	</head>
+	<body>
+		<div class="back" style="background-image: url('donations.jpg') ;"
+		<section>
+<div class="Formformatting">
+<div class="form">
+     	<h2>DONATION </h2>
+<form Name="Donate" onsubmit="return validateForm()" method="Post" action="Donationpost.php">
+<fieldset>
+	<legend>Personal Information</legend>
+		
+		<input type="text" name="fname" id="fname" size="50"  placeholder="First Name"><br>
+		<br>
+		<input type="text" name="lname"id="lname" size="50" placeholder="Last Name"><br>
+		<br>
+		<input type="text" name="email"id="email" size="50" placeholder="Email Address"><br>
+		<br>
+		<input type="text" name="amount"id="amount" size="50" placeholder="1$"><br>
+		
+		<br>
+		
+		<img src="donate-paypal-button.png" class="DonateImage" >
+		<br>	
+
+        <div>  
+         	<div class="buttonformat">
+        	 <button type="submit" class="button" name="sumbit" value="Submit">DONATE NOW</button>
+          	</div>
+		</fieldset>
+	</div>
+</form>
+</div>
+	</section>
+		    <nav class="navarea" >
+            <div class="navimage">
+                    <img src="Logo.png">
+            </div>		
+                    
+                            
+                <ul>
+                    <li><a href="../Home.html">Home</a></li>
+                    <li><a href="../Gallery.html">Gallery</a></li>
+                    <li><a href="../About Us.html">About Us</a></li>
+                     <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="Donation.html">Donate</a></li>
+                </ul>
+            </nav>	
+     </div>
+
+<div id="contact" class="footer-container">
+	<div class="footer">
+		<div class="footer-heading footer-1">
+			<h2>Contact Us</h2>
+			<a href="#">Tel: (+91)8884455</a>
+			<a href="#">Fax: (+02)4444788</a>
+			<a href="#">Email: Renewable@energy.com</a>
+		</div>
+		<div class="footer-heading footer-2">
+			<h2>Social Media</h2>
+			<a href="https://www.instagram.com/" target="_blank">Instagram</a>
+			<a href="https://www.facebook.com/"target="_blank">FaceBook</a>
+			<a href="https://twitter.com/"target="_blank">Twitter</a>
+			<a href="https://www.youtube.com/"target="_blank">Youtube</a>
+		</div>
+		<div class="footer-email-form">
+			<h2>Join our newsletter</h2>
+			<input type="email" placeholder="Enter Your Email Address" id="footer-email">
+			<input type="submit" value="Sign Up"id="footer-email-btn"></div>
+			<div class="copyright1"><p>© 2021 by FlexIT Solutions. All Rights Reserved.</p></div>
+		</div>
+	</div>
+</div>
+</div>
+    </body>
+</html>
+
+
