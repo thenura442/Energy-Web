@@ -1,4 +1,4 @@
-# Canteen Management System Frontend
+# Renewable Energy Awareness Website
 
 Welcome to the Renewable Energy Website project! This website aims to provide detailed information about various types of renewable energy, their methods of utilization, advantages, and disadvantages. The site includes dedicated pages for different renewable energy sources, an About Us page, a Contact Us page, and a Donation page. The Donation page allows users to provide their contact details to donate towards making a bigger impact using renewable energies. All the data collected is stored in an SQL database using XAMPP.
 
